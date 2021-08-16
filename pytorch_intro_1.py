@@ -19,4 +19,7 @@ print(y)
 #         [0.4625, 0.2361, 0.4855],
 #         [0.7539, 0.7024, 0.4550],
 #         [0.9314, 0.3171, 0.5338]])
+# Actually, Gaussian Distribution. Real number, meaningful.
+
+
 
