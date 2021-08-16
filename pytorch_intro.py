@@ -1,6 +1,10 @@
 from __future__ import print_function
 import torch
 
+# All the below are 5*3 matrix.
+
+# Tensors: Similar to ndarray in Numpy. But tensors can use GPU boost.
+
 # Create a matrix w/o init.
 x = torch.empty(5,3)
 print(x)
@@ -20,6 +24,23 @@ print(y)
 #         [0.7539, 0.7024, 0.4550],
 #         [0.9314, 0.3171, 0.5338]])
 # Actually, Gaussian Distribution. Real number, meaningful.
+print(y.dtype)
+# Output: torch.float32
 
 
+# Create a zero matrix, type = long.
+z = torch.zeros(5,3,dtype = torch.long)
+print(z)
+# Output: tensor([[0, 0, 0],
+#         [0, 0, 0],
+#         [0, 0, 0],
+#         [0, 0, 0],
+#         [0, 0, 0]])
+print(z.dtype)
+# Output: torch.int64
 
+t = torch.tensor([2.5,3.5]) # Don't forget the [].
+print(t)
+#Output: tensor([2.5000, 3.5000])
+print(t.dtype)
+# Output: torch.float32.
